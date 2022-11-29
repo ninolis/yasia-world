@@ -1,0 +1,43 @@
+body {
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.section {
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
